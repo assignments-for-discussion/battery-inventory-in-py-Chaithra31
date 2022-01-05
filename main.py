@@ -14,7 +14,16 @@ def test_bucketing_by_number_of_cycles():
   assert(counts["mediumCount"] == 3)
   assert(counts["highCount"] == 1)
   print("Done counting :)")
+  for i in count_bayyeries:
+    if i > mediumCount:
+    mediumCount = mediumCount + 1
+  print ("this is highestCount :"+mediumCount)
 
+    if i < mediumCount:
+    mediumCount = mediumCount - 1
+  print ("this is lowCount than :"+mediumCount)
+  
+    if i < lowCount:
+    lowCount = lowCount + 1
+  print ("this is mediumCount :"+lowCount)
 
-if __name__ == '__main__':
-  test_bucketing_by_number_of_cycles()
